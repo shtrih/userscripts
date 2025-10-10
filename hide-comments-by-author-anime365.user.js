@@ -16,8 +16,9 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=smotret-anime.com
 // @grant        GM_addStyle
 // @run-at       document-end
-// @homepage     https://gist.github.com/shtrih/9b58dfa1e0fb20bdd795b3263140a4ae
-// @supportURL   https://gist.github.com/shtrih/9b58dfa1e0fb20bdd795b3263140a4ae
+// @homepage     https://github.com/shtrih/userscripts
+// @supportURL   https://github.com/shtrih/userscripts/issues
+// @updateURL    https://github.com/shtrih/userscripts/raw/refs/heads/main/hide-comments-by-author-anime365.user.js
 // ==/UserScript==
 
 const STORAGE_KEY = 'hide-comments-by-author-anime365.user.js';

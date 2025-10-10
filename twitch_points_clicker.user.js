@@ -6,6 +6,8 @@
 // @author       You
 // @match        https://www.twitch.tv/*
 // @grant        none
+// @homepage     https://github.com/shtrih/userscripts
+// @supportURL   https://github.com/shtrih/userscripts/issues
 // ==/UserScript==
 
 (function() {

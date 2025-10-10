@@ -8,6 +8,9 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_listValues
+// @homepage     https://github.com/shtrih/userscripts
+// @supportURL   https://github.com/shtrih/userscripts/issues
+// @updateURL    https://github.com/shtrih/userscripts/raw/refs/heads/main/Russian%20Text%20Auto%20Corrector%20with%20MutationObserver.user.js
 // ==/UserScript==
 // Если нужно сбросить статистику:
 // Object.keys(replacements).forEach((error) => GM_setValue(error, 0));

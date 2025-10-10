@@ -6,8 +6,9 @@
 // @match        https://www.auchan.ru/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=auchan.ru
 // @grant        GM_addStyle
-// @homepage     https://gist.github.com/shtrih/ff9c87707ed34bab081d436de9256e03
-// @supportURL   https://gist.github.com/shtrih/ff9c87707ed34bab081d436de9256e03
+// @homepage     https://github.com/shtrih/userscripts
+// @supportURL   https://github.com/shtrih/userscripts/issues
+// @updateURL    https://github.com/shtrih/userscripts/raw/refs/heads/main/auchan-prices-sort.user.js
 // ==/UserScript==
 
 // чтобы не обрезались названия товаров, т.к вес в конце

@@ -12,6 +12,8 @@
 // @match        https://smotret-anime.org/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=anime-365.ru
 // @grant        GM_addStyle
+// @homepage     https://github.com/shtrih/userscripts
+// @supportURL   https://github.com/shtrih/userscripts/issues
 // ==/UserScript==
 
 (function() {
