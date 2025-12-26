@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         auchan-prices.user.js
-// @version      0.9
-// @description  Сортирует по выгоде и показывает цену за кг/л/шт! Нужно нажать ссылку слева снизу.
+// @version      0.10
+// @description  Сортирует по выгоде и показывает цену за кг/л/шт! Нужно авторизоваться и нажать ссылку слева снизу.
 // @author       You
 // @match        https://www.auchan.ru/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=auchan.ru
@@ -67,9 +67,12 @@ GM_addStyle('p.styles_productCardContentPanel_name__072Y7 { display: block; }');
                     let total = `<div>${pricePerKG.toFixed(2)} ₽ / кг</div>`
                     if (isPer1kg) {
                         if (weightMatches != null || weightMatchesKilo != null) {
-                            const weight = weightMatchesKilo[1].replace(',', '.'),
-                                  totalPrice = pricePerKG * weight
-                            ;
+                            let weight = weightMatches != null ? weightMatches[1] : weightMatchesKilo[1].replace(',', '.');
+                            // Больше 1000 гр → переводим в кг
+                            if (weight >= 1000) {
+                                weight = weight / 1000
+                            }
+                            const totalPrice = pricePerKG * weight
                             total = `<div>${totalPrice.toFixed(2)} ₽ / всего</div>`
                         }
                     }
