@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         auchan-prices.user.js
-// @version      0.10
+// @version      0.11
 // @description  Сортирует по выгоде и показывает цену за кг/л/шт! Нужно авторизоваться и нажать ссылку слева снизу.
 // @author       You
 // @match        https://www.auchan.ru/*
@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 // чтобы не обрезались названия товаров, т.к вес в конце
-GM_addStyle('p.styles_productCardContentPanel_name__072Y7 { display: block; }');
+GM_addStyle('p.styles_productCardContentPanel_name__gtZfG { display: block; }');
 
 (function () {
     'use strict';
@@ -25,11 +25,11 @@ GM_addStyle('p.styles_productCardContentPanel_name__072Y7 { display: block; }');
     link.addEventListener('click', (e) => {
         e.preventDefault()
 
-        const productCards = document.querySelectorAll('.styles_productCard__Qy_9h'),
-            productTitleSelector = '.styles_productCardContentPanel_name__072Y7',
-            productPriceSelector = '.styles_productCardContentPanel_price__MqlWB',
+        const productCards = document.querySelectorAll('.styles_productCard__xH9l_'),
+            productTitleSelector = '.styles_productCardContentPanel_name__gtZfG',
+            productPriceSelector = '.styles_productCardContentPanel_price__CCJjV',
             extractPriceValue = text => text.match(/^((\d+\s?)+[,]\d+)/)[0].replaceAll(' ', '').replaceAll(',', '.'),
-            perWeightSel = '.styles_productCardContentPanel_type__6VRIK'
+            perWeightSel = '.styles_productCardContentPanel_type__lon8x'
         ;
         const productList = []; // 0 - price, 1 - node
         let productContainer = null;
