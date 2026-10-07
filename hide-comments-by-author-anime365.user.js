@@ -8,11 +8,15 @@
 // @match        https://hentai365.ru/*
 // @match        https://smotret-anime.com/*
 // @match        https://smotret-anime.net/*
+// @match        https://smotret-anime.co/*
+// @match        https://smotret-anime.app/*
 // @exclude      https://anime365.ru/translations/embed/*
 // @exclude      https://anime-365.ru/translations/embed/*
 // @exclude      https://hentai365.ru/translations/embed/*
 // @exclude      https://smotret-anime.com/translations/embed/*
 // @exclude      https://smotret-anime.net/translations/embed/*
+// @match        https://smotret-anime.co/translations/embed/*
+// @match        https://smotret-anime.app/translations/embed/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=smotret-anime.com
 // @grant        GM_addStyle
 // @run-at       document-end

@@ -10,6 +10,8 @@
 // @match        https://smotret-anime.com/*
 // @match        https://smotret-anime.net/*
 // @match        https://smotret-anime.org/*
+// @match        https://smotret-anime.co/*
+// @match        https://smotret-anime.app/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=anime-365.ru
 // @grant        GM_addStyle
 // @homepage     https://github.com/shtrih/userscripts
