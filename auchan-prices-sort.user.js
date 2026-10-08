@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         auchan-prices.user.js
-// @version      0.11
+// @version      0.12
 // @description  Сортирует по выгоде и показывает цену за кг/л/шт! Нужно авторизоваться и нажать ссылку слева снизу.
 // @author       You
 // @match        https://www.auchan.ru/*
@@ -24,6 +24,12 @@ GM_addStyle('p.styles_productCardContentPanel_name__gtZfG { display: block; }');
 
     link.addEventListener('click', (e) => {
         e.preventDefault()
+
+        // Удалить карусель, чтобы карточки из нее не мешали
+        const carousel = document.querySelector('.styles_shelf__8O8sy');
+        if (carousel !== null) {
+            carousel.remove();
+        }
 
         const productCards = document.querySelectorAll('.styles_productCard__xH9l_'),
             productTitleSelector = '.styles_productCardContentPanel_name__gtZfG',
