@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         anime365 Player width
 // @namespace    http://tampermonkey.net/
-// @version      2025-07-17
+// @version      2026-10-13
 // @description  Max player width relates on page width
 // @author       You, chatgpt
 // @match        https://anime365.ru/*

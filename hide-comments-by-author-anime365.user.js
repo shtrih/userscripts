@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         hide-comments-by-author-anime365.user.js
-// @version      0.3
+// @version      0.4
 // @description  Скрывает комменты выбранных авторов.
 // @author       shtrih
 // @match        https://anime365.ru/*
